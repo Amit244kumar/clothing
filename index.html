@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/64edd0846d.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="indexResponsive.css">
+ 
+</head>
+<body onmousemove="coordinates(event)" >
+        <header class="container" >
+            <div id="top-main-content">
+                <div id="top-bar">
+                  <p>YOU ARE $200 AWAY FROM FREE SHIPPING</p>
+               </div>
+               <div id="parallel-lines" style="cursor: pointer; height: 0px;">
+                <div class="cross" ></div>
+                <div class="cross"></div>
+                <div class="cross"></div>
+               </div>
+                <div id="main-header-bar">
+                    <nav id="left-side-navigation">
+                            <ul>
+                                <li class="horizontal-line">
+                                    <a href="#" class="list-item" id="sdf">
+                                        NEW 
+                                        <span class="animation-line" id="sss"></span>
+                                    </a>
+                                </li>
+                                <li class="horizontal-line">
+                                    <a href="#" class="list-item">
+                                        TOPS 
+                                        <span class="animation-line"></span>
+                                    </a>
+                                </li>
+                                <li class="horizontal-line">
+                                    <a href="#" class="list-item">
+                                        BOTTOMS 
+                                        <span class="animation-line"></span>
+                                    </a>
+                                </li>
+                                <li class="horizontal-line">
+                                    <a href="#" class="list-item">
+                                        ACCESSORIES
+                                        <span class="animation-line"></span>
+                                    </a>
+                                </li>
+                                <li class="horizontal-line">
+                                    <a href="#" class="list-item">
+                                        OUTLES
+                                        <span class="animation-line"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                    </nav>
+                    <div id="header-heading" style="font-family: 'Roboto', sans-serif;">
+                        <h1 style="font-family: 'Roboto', sans-serif; font-weight: 500;">MR SIMPLE</h1>
+                    </div>
+                    <nav id="right-side-navigation" style="    display: flex;gap: 56px;">
+                        <ul>
+                            <li class="horizontal-line">
+                                <a href="#" class="list-item1">
+                                    BOUNDLES
+                                    <span class="animation-line"></span>
+                                </a>
+                            </li>
+                            <li class="horizontal-line">
+                                <a href="#" class="list-item1">
+                                    STORES
+                                    <span class="animation-line"></span>
+                                </a>
+                            </li>
+                            <li class="horizontal-line">
+                                <a href="#" class="list-item1">
+                                    JOURNAL
+                                    <span class="animation-line"></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div id="icons">
+                            <a href="" class="list-item"><i class="fa-solid fa-user"></i></a>
+                            <a href="" class="list-item"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            <a class="list-item" style="cursor: pointer;"><i class="fa-solid fa-bag-shopping"  onclick="openCart()"></i></a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div id="imgs-section">
+                <div class="img-content" style="">
+                    <img src="./bags.webp" alt=""  class="img" style="transform: scale(1.1);">
+                    <div class="img-middle-content">
+                        <p>NEW ARRIVALS</p>
+                        <h1>Jasper Tote</h1>
+                        <button id="btn">
+                            <a href="" style="font-family: math;">
+                                SHOP NOW
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="img-content" style="display: none;">
+                    <img src="./t-shirt.webp" alt="" width="800px" height="600px" class="img" style="transform: scale(1.1);">
+                    <div class="img-middle-content">
+                        <p>BUY 3 GET 25% OFF | BUY 6 GET 35% OFF</p>
+                        <h1 style="margin-left: 114px;">Reginal Tee</h1>
+                        <button id="btn" style="margin-left: 155px;">
+                            <a href="#">SHOP NOW</a>
+                        </button>
+                    </div>
+                </div>
+                 <div class="img-content" style="display: none;">
+                    <img src="./cargo_pent.webp" alt="" width="800px" height="600px" class="img" style="transform: scale(1.1);">
+                    <div class="img-middle-content">
+                        <p style="margin-left: 67px;">BACK TO STOCK</p>
+                        <h1>Carpenter pent</h1>
+                       <button id="btn" style="margin-left: 71px;">
+                            <a href="#">SHOP NOW</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="img-content" style="display: none;">
+                    <img src="./t-shirt1.webp" alt="" width="800px" height="600px" class="img" style="transform: scale(1.1);">
+                    <div class="img-middle-content">
+                        <p style="margin-left: 68px;">NEW ARRIVAL</p>
+                        <h1>Chapman Tees</h1>
+                        <button id="btn" style="margin-left: 71px;">
+                            <a href="#">SHOP NOW</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="img-content" style="display: none;">
+                    <img src="./shorst.webp" alt="" class="img"  style="transform: scale(1.1);">
+                    <div class="img-middle-content">
+                        <p style="margin-left: 68px;">NEW COLOURS</p>
+                        <h1>Burbank Short</h1>
+                        <button id="btn" style="margin-left: 71px;">
+                            <a href="#">SHOP NOW</a>
+                        </button>
+                    </div>
+                </div>
+                <div id="radio-circle">
+                    <div class="circle" style="background-color: white;"  onclick="imageChange(1)"></div>
+                    <div class="circle" id="" onclick="imageChange(2)"></div>
+                    <div class="circle" id="" onclick="imageChange(3)"></div>
+                    <div class="circle" id="" onclick="imageChange(4)"></div>
+                    <div class="circle" id="" onclick="imageChange(5)"></div>
+                </div>
+            </div>
+            <div id="addToCart">
+                  <div id="head" onclick="closeCart()">
+                    <p style="font-size: x-large;" >Cart</p>
+                    <span style="cursor: pointer;" >
+                        <i class="fa-solid fa-xmark" ></i>
+                    </span>
+                  </div>
+                  <div id="center">
+                      <h2>Your cart is empty</h2>
+                       <div id="shop">
+                        <a href="#">SHOP NOW</a>
+                       </div>
+                  </div>
+                  <div id="bottom">
+                      <div class="btn"><a href="#" id="btn1">SHOP BUNDLES</a> </div>
+                      <div class="btn" style="background-color: black;"><a href="#" id="btn2"> SHOP ALL PRODUCTS </a> </div>
+                  </div>
+            </div>
+            <div id="flex-box">
+                <div id="header">
+                    <h3 style="font-weight: 100;">Style</h3>
+                    <h3 style="font-weight: 100;">Made</h3>
+                    <h2>Simple</h2>
+                </div>
+                <div>
+                    <p>Mr Simple is a clothing and accessories brand inspired by vintage workwear, military surplus and sportswear. With our roots in skateboarding and street culture we take pride in our quality and a timeless approach to design.</p>
+                </div>
+                <div id="spiration">
+                    <img src="./icons-intro.webp" alt="" width="160" height="23">
+                </div>
+            </div>
+        </header>
+        <section class="best-seller">
+            <div id="seller-header">
+                <div id="head">
+                    <h2>best sellers</h2>
+                </div>
+                <div id="change-slider">
+                    <span class="arrow"  onclick="back()"><i class="fa-solid fa-angle-left"></i></span>
+                    <p style="margin: 3px;"><span style="margin: 0px 4px;" id="count">1</span>/<span style="margin-left:6px;">5</span></p>
+                    <span class="arrow"  onclick="go()"><i class="fa-solid fa-angle-right"></i></span>
+                    
+                </div>
+            </div>
+            <div id="slider-container">
+                <div id="slider-wrap" onmousedown="mouseDown()" onmouseup="mouseUp()" >
+                    
+                   <div class="products" style="left:0%" >
+                        <a href="#" class="products"  onmouseover="hideFront(0)" onmouseout="showFront(0)" >
+                            <img src="img/firstimgb.webp" alt="">
+                            <img src="img/firstimgf.webp" alt="" class="front-img" > 
+                        </a> 
+                        <ul class="sizes" onmousemove="hideFront(0)">
+                                <li class="unavailable"> <p>XXS</p> </li>
+                                <li class="available"> <p>XS</p> </li>
+                                <li class="available"> <p>S</p> </li>
+                                <li class="available"> <p>M</p> </li>
+                                <li class="available"> <p>L</p> </li>
+                                <li class="available"> <p>XL</p> </li>
+                                <li class="available"> <p>XXL</p> </li>
+                                <li class="available"> <p>XXXL</p> </li>
+                        </ul>
+                        <div class="description">
+                            <div class="colorname">
+                                <h4>Reginald Organic Tee</h4>
+                                <p>white</p>
+                            </div>
+                            <div class="price">
+                                <p class="hftn">$27.97</p>
+                                <p class="fjd">$49.95</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products" style="left:22%">
+                        <a href="#" class="products"  onmouseover="hideFront(1)" onmouseout="showFront(1)">
+                           <img src="img/secondimgb.webp" alt="">
+                           <img src="img/secondimgf.webp" alt="" class="front-img">
+                        </a>
+                        <ul class="sizes" onmousemove="hideFront(1)">
+                            <li class="unavailable"> <p>XXS</p> </li>
+                            <li class="unavailable"> <p>XS</p> </li>
+                            <li class="available"> <p>S</p> </li>
+                            <li class="available"> <p>M</p> </li>
+                            <li class="unavailable"> <p>L</p> </li>
+                            <li class="available"> <p>XL</p> </li>
+                            <li class="available"> <p>XXL</p> </li>
+                            <li class="unavailable"> <p>XXXL</p> </li>
+                        </ul>
+                        <div class="description">
+                            <div class="colorname">
+                                <h4>Chapman tee kookabura</h4>
+                                <p>black</p>
+                            </div>
+                            <div class="price">
+                                <p class="hftn">$35.97</p>
+                                <p class="fjd">$59.95</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products" style="left:44%" id="mu">
+                        <a href="#" class="products"  onmouseover="hideFront(2)" onmouseout="showFront(2)">
+                           <img src="./img/thirdimgb.avif" alt="">
+                           <img src="./img/thirdimgf.webp" alt="" class="front-img">
+                        </a>
+                        <ul class="sizes" onmousemove="hideFront(2)" style="visibility: hidden;">
+                            <li class="unavailable"> <p>XXS</p> </li>
+                            <li class="available"> <p>XS</p> </li>
+                            <li class="available"> <p>S</p> </li>
+                            <li class="available"> <p>M</p> </li>
+                            <li class="available"> <p>L</p> </li>
+                            <li class="available"> <p>XL</p> </li>
+                            <li class="available"> <p>XXL</p> </li>
+                            <li class="available"> <p>XXXL</p> </li>
+                        </ul>
+                        <div class="description">
+                            <div class="colorname">
+                                <h4>Cloths bag</h4>
+                                <p>Green</p>
+                            </div>
+                            <div class="price">
+                                <p class="hftn">$35.97</p>
+                                <p class="fjd">$59.95</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products" style="left:66%">
+                        <a href="#" class="products"  onmouseover="hideFront(3)" onmouseout="showFront(3)">
+                           <img src="img/fourthimgb.webp" alt="">
+                           <img src="img/fourthimgf.webp" alt="" class="front-img">
+                        </a>
+                        <ul class="sizes" onmousemove="hideFront(3)" style="gap: 15px;">
+                            <li class="available"> <p>28</p> </li>
+                            <li class="available"> <p>30</p> </li>
+                            <li class="available"> <p>32</p> </li>
+                            <li class="available"> <p>34</p> </li>
+                            <li class="available"> <p>36</p> </li>
+                            <li class="available"> <p>38</p> </li>
+                            <li class="unavailable"> <p>40</p> </li>
+                            <!-- <li class="unavailable"> <p>XXXL</p> </li> -->
+                        </ul>
+                        <div class="description">
+                            <div class="colorname">
+                                <h4>tylor Stretch Chino Short</h4>
+                                <p>Khaki</p>
+                            </div>
+                            <div class="price">
+                                <p class="hftn">$59.97</p>
+                                <p class="fjd">$99.95</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products" style="left:91%">
+                        <a href="#" class="products"  onmouseover="hideFront(4)" onmouseout="showFront(4)">                        
+                            <img src="./img/fifthimgb.webp" alt="">
+                            <img src="./img/fifthimgf.webp" alt="" class="front-img">
+                        </a>
+                        <ul class="sizes" onmousemove="hideFront(4)">
+                            <li class="unavailable"> <p>XXS</p> </li>
+                            <li class="available"> <p>XS</p> </li>
+                            <li class="available"> <p>S</p> </li>
+                            <li class="available"> <p>M</p> </li>
+                            <li class="available"> <p>L</p> </li>
+                            <li class="available"> <p>XL</p> </li>
+                            <li class="available"> <p>XXL</p> </li>
+                            <li class="available"> <p>XXXL</p> </li>
+                        </ul>
+                        <div class="description">
+                            <div class="colorname">
+                                <h4>Linen Long Sleeve Shirt</h4>
+                                <p>Natural</p>
+                            </div>
+                            <div class="price">
+                                <p class="hftn">$71.97</p>
+                                <p class="fjd">$119.95</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products" style="left:113%">
+                        <a href="#" class="products"  onmouseover="hideFront(5)" onmouseout="showFront(5)">
+                            <img src="./img/sixthimgb.webp" alt="">
+                            <img src="./img/sixthimgf.webp" alt="" class="front-img">
+                        </a>    
+                        <ul class="sizes" onmousemove="hideFront(5)">
+                            <li class="unavailable"> <p>XXS</p> </li>
+                            <li class="available"> <p>XS</p> </li>
+                            <li class="available"> <p>S</p> </li>
+                            <li class="available"> <p>M</p> </li>
+                            <li class="available"> <p>L</p> </li>
+                            <li class="available"> <p>XL</p> </li>
+                            <li class="available"> <p>XXL</p> </li>
+                            <li class="available"> <p>XXXL</p> </li>
+                        </ul>
+                        <div class="description">
+                            <div class="colorname">
+                                <h4>tanner 2.O Linen Shorts</h4>
+                                <p>Navy</p>
+                            </div>
+                            <div class="price">
+                                <p class="hftn">$59.97</p>
+                                <p class="fjd">$99.95</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products" style="left:135%">
+                         <a href="#" class="products"  onmouseover="hideFront(6)" onmouseout="showFront(6)">
+                            <img src="./img/seventimgb.webp" alt="">
+                            <img src="./img/seventimgf.webp" alt="" class="front-img">
+                        </a>
+                        <ul class="sizes" onmousemove="hideFront(6)">
+                            <li class="unavailable"> <p>XXS</p> </li>
+                            <li class="available"> <p>XS</p> </li>
+                            <li class="available"> <p>S</p> </li>
+                            <li class="available"> <p>M</p> </li>
+                            <li class="available"> <p>L</p> </li>
+                            <li class="available"> <p>XL</p> </li>
+                            <li class="available"> <p>XXL</p> </li>
+                            <li class="available"> <p>XXXL</p> </li>
+                        </ul>
+                        <div class="description">
+                            <div class="colorname">
+                                <h4>Earl BBQ Shirt</h4>
+                                <p>wategoes</p>
+                            </div>
+                            <div class="price">
+                                <p class="hftn">$35.97</p>
+                                <p class="fjd">$59.95</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products" style="left:157%" >
+                       <a href="#" class="products"  onmouseover="hideFront(7)" onmouseout="showFront(7)">
+                            <img src="img/eightimgb.webp" alt="">
+                            <img src="img/eightimgf.webp" alt="" class="front-img">
+                        </a>                     
+                        <ul class="sizes" onmousemove="hideFront(7)">
+                            <li class="unavailable"> <p>XXS</p> </li>
+                            <li class="available"> <p>XS</p> </li>
+                            <li class="available"> <p>S</p> </li>
+                            <li class="available"> <p>M</p> </li>
+                            <li class="available"> <p>L</p> </li>
+                            <li class="available"> <p>XL</p> </li>
+                            <li class="available"> <p>XXL</p> </li>
+                            <li class="available"> <p>XXXL</p> </li>
+                        </ul>
+                        <div class="description">
+                            <div class="colorname">
+                                <h4>Heavy Weight Tee</h4>
+                                <p>white</p>
+                            </div>
+                            <div class="price">
+                                <p class="hftn">$35.97</p>
+                                <p class="fjd">$59.95</p>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="products" style="left:182%" >
+                        <a href="#" class="products"  onmousemove="hideFront(8)" onmouseout="showFront(8)">
+                            <img src="img/nineb.webp" alt="">
+                            <img src="img/ninef.webp"   alt="" class="front-img">
+                        </a>
+                        <ul class="sizes" onmousemove="hideFront(8)">
+                            <li class="unavailable"> <p>XXS</p> </li>
+                            <li class="available"> <p>XS</p> </li>
+                            <li class="available"> <p>S</p> </li>
+                            <li class="available"> <p>M</p> </li>
+                            <li class="available"> <p>L</p> </li>
+                            <li class="available"> <p>XL</p> </li>
+                            <li class="available"> <p>XXL</p> </li>
+                            <li class="available"> <p>XXXL</p> </li>
+                        </ul>
+                        <div class="description">
+                            <div class="colorname">
+                                <h4>Chapman Tee kookabura</h4>
+                                <p>white</p>
+                            </div>
+                            <div class="price">
+                                <p class="hftn">$35.97</p>
+                                <p class="fjd">$59.95</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products" style="left:203.6%">
+                         <a href="#" class="products"  onmouseover="hideFront(9)" onmouseout="showFront(9)">
+                            <img src="img/tenb.webp" alt="">
+                            <img src="img/tenf.webp" alt="" class="front-img">
+                        </a>
+                        <ul class="sizes" onmousemove="hideFront(9)">
+                            <li class="unavailable"> <p>XXS</p> </li>
+                            <li class="available"> <p>XS</p> </li>
+                            <li class="available"> <p>S</p> </li>
+                            <li class="available"> <p>M</p> </li>
+                            <li class="available"> <p>L</p> </li>
+                            <li class="available"> <p>XL</p> </li>
+                            <li class="available"> <p>XXL</p> </li>
+                            <li class="available"> <p>XXXL</p> </li>
+                        </ul>
+                        <div class="description">
+                            <div class="colorname">
+                                <h4>Chapman Tee Rosell</h4>
+                                <p>Navy</p>
+                            </div>
+                            <div class="price">
+                                <p class="hftn">$35.97</p>
+                                <p class="fjd">$59.95</p>
+                            </div>
+                        </div>
+                    </div>                     
+                    <div class="products"  style="left:225%" >
+                        <a href="#" class="products"  onmouseover="hideFront(10)" onmouseout="showFront(10)">
+                            <img src="img/elevenb.webp" alt="">
+                            <img src="img/elevenf.webp" alt="" class="front-img">
+                        </a>   
+                        <ul class="sizes" onmousemove="hideFront(10)">
+                            <li class="unavailable"> <p>XXS</p> </li>
+                            <li class="available"> <p>XS</p> </li>
+                            <li class="available"> <p>S</p> </li>
+                            <li class="available"> <p>M</p> </li>
+                            <li class="available"> <p>L</p> </li>
+                            <li class="available"> <p>XL</p> </li>
+                            <li class="available"> <p>XXL</p> </li>
+                            <li class="available"> <p>XXXL</p> </li>
+                        </ul>
+                        <div class="description">
+                            <div class="colorname">
+                                <h4>Carpenter Pant</h4>
+                                <p>vintage Black</p>
+                            </div>
+                            <div class="price">
+                                <p class="hftn">$77.97</p>
+                                <p class="fjd">$129.95</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products"  style="left:247%">
+                        <a href="#" class="products"  onmouseover="hideFront(11)" onmouseout="showFront(11)">
+                            <img src="img/twileb.webp" alt="">
+                            <img src="img/twilef.webp" alt="" class="front-img">
+                        </a>    
+                        <ul class="sizes" onmousemove="hideFront(11)">
+                            <li class="unavailable"> <p>XXS</p> </li>
+                            <li class="available"> <p>XS</p> </li>
+                            <li class="available"> <p>S</p> </li>
+                            <li class="available"> <p>M</p> </li>
+                            <li class="available"> <p>L</p> </li>
+                            <li class="available"> <p>XL</p> </li>
+                            <li class="available"> <p>XXL</p> </li>
+                            <li class="available"> <p>XXXL</p> </li>
+                        </ul>
+                        <div class="description">
+                            <div class="colorname">
+                                <h4>freighter cargo Shorts</h4>
+                                <p>Army</p>
+                            </div>
+                            <div class="price">
+                                <p class="hftn">$71.97</p>
+                                <p class="fjd">$119.95</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products"  style="left:273%">
+                        <a href="#" class="products"  onmouseover="hideFront(12)" onmouseout="showFront(12)">
+                            <img src="img/thirdteenb.webp" alt="">
+                            <img src="img/thirteenf.webp" alt="" class="front-img">
+                        </a>    
+                        <ul class="sizes" onmousemove="hideFront(12)">
+                            <!-- <li class="unavailable"> <p>XXS</p> </li>
+                            <li class="available"> <p>XS</p> </li>
+                            <li class="available"> <p>S</p> </li>
+                            <li class="available"> <p>M</p> </li>
+                            <li class="available"> <p>L</p> </li>
+                            <li class="available"> <p>XL</p> </li>
+                            <li class="available"> <p>XXL</p> </li>
+                            <li class="available"> <p>XXXL</p> </li> -->
+                        </ul>
+                        <div class="description" style="top:  450px;">
+                            <div class="colorname">
+                                <h4>Jasper Tote Large</h4>
+                                <p>black</p>
+                            </div>
+                            <div class="price">
+                                <p class="hftn">$89.97</p>
+                                <p class="fjd">$149.95</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products"  style="left:295%">
+                        <a href="#" class="products"  onmouseover="hideFront(13)" onmouseout="showFront(13)">
+                            <img src="img/fourteenb.webp" alt="">
+                            <img src="img/fourteenf.webp" alt="" class="front-img">
+                        </a>    
+                        <ul class="sizes" onmousemove="hideFront(13)">
+                            <li class="unavailable"> <p>XXS</p> </li>
+                            <li class="available"> <p>XS</p> </li>
+                            <li class="available"> <p>S</p> </li>
+                            <li class="available"> <p>M</p> </li>
+                            <li class="available"> <p>L</p> </li>
+                            <li class="available"> <p>XL</p> </li>
+                            <li class="available"> <p>XXL</p> </li>
+                            <li class="available"> <p>XXXL</p> </li>
+                        </ul>
+                        <div class="description">
+                            <div class="colorname">
+                                <h4>Burbank Short</h4>
+                                <p>black</p>
+                            </div>
+                            <div class="price">
+                                <p class="hftn">$59.97</p>
+                                <p class="fjd">$99.95</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products"  style="left:317%">
+                        <a href="#" class="products"  onmouseover="hideFront(14)" onmouseout="showFront(14)">
+                            <img src="img/fifteenb.webp" alt="">
+                            <img src="img/fifteenf.webp" alt="" class="front-img">
+                        </a> 
+                        <ul class="sizes" onmousemove="hideFront(14)">
+                            <li class="unavailable"> <p>XXS</p> </li>
+                            <li class="available"> <p>XS</p> </li>
+                            <li class="available"> <p>S</p> </li>
+                            <li class="available"> <p>M</p> </li>
+                            <li class="available"> <p>L</p> </li>
+                            <li class="available"> <p>XL</p> </li>
+                            <li class="available"> <p>XXL</p> </li>
+                            <li class="available"> <p>XXXL</p> </li>
+                        </ul>
+                        <div class="description">
+                            <div class="colorname">
+                                <h4>Smith Long sleeve Walffle</h4>
+                                <p>black</p>
+                            </div>
+                            <div class="price">
+                                <p class="hftn">$59.97</p>
+                                <p class="fjd">$99.95</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products"  style="left:339%">    
+                        <a href="#" class="products"  onmouseover="hideFront(15)" onmouseout="showFront(15)">
+                            <img src="img/sixteenb.avif" alt="">
+                            <img src="img/sixteenf.avif" alt="" class="front-img">
+                        </a>    
+                        <ul class="sizes" onmousemove="hideFront(15)">
+                            <li class="unavailable"> <p>XXS</p> </li>
+                            <li class="available"> <p>XS</p> </li>
+                            <li class="available"> <p>S</p> </li>
+                            <li class="available"> <p>M</p> </li>
+                            <li class="available"> <p>L</p> </li>
+                            <li class="available"> <p>XL</p> </li>
+                            <li class="available"> <p>XXL</p> </li>
+                            <li class="available"> <p>XXXL</p> </li>
+                        </ul>
+                        <div class="description">
+                            <div class="colorname">
+                                <h4>Quilted Cord Jacket</h4>
+                                <p>Graphite</p>
+                            </div>
+                            <div class="price">
+                                <p class="hftn">$95.97</p>
+                                <p class="fjd">$159.95</p>
+                            </div>
+                        </div>
+                     </div>
+                    <div class="products"  style="left:364%">
+                        <a href="#" class="products"  onmouseover="hideFront(16)" onmouseout="showFront(16)">
+                            <img src="img/seventeenb.webp" alt="">
+                            <img src="img/seventeenf.webp" alt="" class="front-img">
+                        </a>    
+                        <ul class="sizes" onmousemove="hideFront(16)">
+                            <li class="unavailable"> <p>XXS</p> </li>
+                            <li class="available"> <p>XS</p> </li>
+                            <li class="available"> <p>S</p> </li>
+                            <li class="available"> <p>M</p> </li>
+                            <li class="available"> <p>L</p> </li>
+                            <li class="available"> <p>XL</p> </li>
+                            <li class="available"> <p>XXL</p> </li>
+                            <li class="available"> <p>XXXL</p> </li>
+                        </ul>
+                        <div class="description">
+                            <div class="colorname">
+                                <h4>Linen Short Sleeve Shirt</h4>
+                                <p>Natural</p>
+                            </div>
+                            <div class="price">
+                                <p class="hftn">$59.97</p>
+                                <p class="fjd">$99.95</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="products"  style="left:386%">
+                        <a href="#" class="products"  onmouseover="hideFront(17)" onmouseout="showFront(17)">
+                            <img src="img/eighteenb.webp" alt="">
+                            <img src="img/eighteenf.webp" alt="" class="front-img">
+                        </a>    
+                        <ul class="sizes" onmousemove="hideFront(17)">
+                            <li class="unavailable"> <p>XXS</p> </li>
+                            <li class="available"> <p>XS</p> </li>
+                            <li class="available"> <p>S</p> </li>
+                            <li class="available"> <p>M</p> </li>
+                            <li class="available"> <p>L</p> </li>
+                            <li class="available"> <p>XL</p> </li>
+                            <li class="available"> <p>XXL</p> </li>
+                            <li class="available"> <p>XXXL</p> </li>
+                        </ul>
+                        <div class="description">
+                            <div class="colorname">
+                                <h4>Fisher knit </h4>
+                                <p>fatigue</p>
+                            </div>
+                            <div class="price">
+                                <p class="hftn">$77.97</p>
+                                <p class="fjd">$129.95</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products"  style="left:408%">
+                        <a href="#" class="products"  onmouseover="hideFront(18)" onmouseout="showFront(18)">
+                            <img src="img/nineteenb.avif" alt="">
+                            <img src="img/nineteenf.webp" alt="" class="front-img">
+                        </a>    
+                        <ul class="sizes" onmousemove="hideFront(18)">
+                            <!-- <li class="unavailable"> <p>XXS</p> </li>
+                            <li class="available"> <p>XS</p> </li>
+                            <li class="available"> <p>S</p> </li>
+                            <li class="available"> <p>M</p> </li>
+                            <li class="available"> <p>L</p> </li>
+                            <li class="available"> <p>XL</p> </li>
+                            <li class="available"> <p>XXL</p> </li>
+                            <li class="available"> <p>XXXL</p> </li> -->
+                        </ul>
+                        <div class="description" style="top:  450px;">
+                            <div class="colorname">
+                                <h4>Reginald Organic Tee</h4>
+                                <p>white</p>
+                            </div>
+                            <div class="price">
+                                <p class="hftn">$35.97</p>
+                                <p class="fjd">$59.95</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products"  style="left:430%">
+                        <a href="#" class="products"  onmouseover="hideFront(19)" onmouseout="showFront(19)">
+                            <img src="img/tewntyb.webp" alt="">
+                            <img src="img/tewntyf.webp" alt="" class="front-img">
+                        </a>
+                        <ul class="sizes" onmousemove="hideFront(19)">
+                            <li class="unavailable"> <p>XXS</p> </li>
+                            <li class="available"> <p>XS</p> </li>
+                            <li class="available"> <p>S</p> </li>
+                            <li class="available"> <p>M</p> </li>
+                            <li class="available"> <p>L</p> </li>
+                            <li class="available"> <p>XL</p> </li>
+                            <li class="available"> <p>XXL</p> </li>
+                            <li class="available"> <p>XXXL</p> </li>
+                        </ul>
+                        <div class="description">
+                            <div class="colorname">
+                                <h4>Reginald Organic Tee</h4>
+                                <p>white</p>
+                            </div>
+                            <div class="price">
+                                <p class="hftn">$35.97</p>
+                                <p class="fjd">$59.95</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <div id="view-product">
+                <a href="">view all products</a>
+            </div>       
+        </section>
+        <section class="productList">
+                <div id="change-slider" style="justify-content:end;margin-right: 54px;margin-bottom: 10px;">
+                    <span class="arrow" id="previous" onclick="leftArrow()"><i class="fa-solid fa-angle-left"></i></span>
+                    <p style="margin: 3px;"><span style="margin: 0px 4px;" id="count1">1</span>/<span style="margin-left:6px;">2</span></p>
+                    <span class="arrow" id="next" onclick="rightArrow()"><i class="fa-solid fa-angle-right"></i></span>    
+                </div>
+                <div id="carousel">
+                    <div id="flickity-viewport">
+                        <div id="imgContainer">
+                            <div class="clothsList" sty>
+                                <div class="img">
+                                    <div></div>
+                                    <img src="img/shirts1.webp" alt="" srcset="">
+                                </div>
+                                <div class="imgContent">
+                                    <h1>Shirt</h1>
+                                    <a href="#">
+                                        <button>SHOP NOW</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="clothsList">
+                                <div class="img">
+                                    <img src="img/shorts2.webp" alt="" srcset="">
+                                </div>
+                                <div class="imgContent">
+                                    <h1>Short</h1>
+                                    <a href="#">
+                                        <button>SHOP NOW</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="clothsList">
+                                <div class="img">
+                                    <img src="img/t-shirt3.webp" alt="" srcset="">
+                                </div>
+                                <div class="imgContent">
+                                    <h1>Tees</h1>
+                                    <a href="#">
+                                        <button>SHOP NOW</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="clothsList">
+                                <div class="img">
+                                    <img src="img/cargo4.webp" alt="" srcset="">
+                                </div>
+                                <div class="imgContent">
+                                    <h1>Pants</h1>
+                                    <a href="#">
+                                        <button>SHOP NOW</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="clothsList">
+                                <div class="img">
+                                    <img src="img/winter-tshirt5.webp" alt="" srcset="">
+                                </div>
+                                <div class="imgContent">
+                                    <h1>Jackets</h1>
+                                    <a href="#">
+                                        <button>SHOP NOW</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="clothsList">
+                                <div class="img">
+                                    <img src="img/Sorrento6.webp" alt="" srcset="">
+                                </div>
+                                <div class="imgContent">
+                                    <h1>Knitwear</h1>
+                                    <a href="#">
+                                        <button>SHOP NOW</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="store">
+            <div id="storeContainer">
+                <div id="img">
+                    <img src="img/store.jpg" alt="">
+                </div>
+                <div id="findStore">
+                    <h1>Our Stores</h1>
+                    <a href="#">
+                        <button>FIND STORE</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <footer id="footer"> 
+            <div id="about-mr-simple">
+                <p class="heading">ABOUT MR SIMPLE</p>
+                <p class="heading">Constructed with premium fabrics, such as organic cotton, sustainable hemp and linen. The Mr Simple collection focuses on cut, fabric and quality. Logos and branding are kept to a minimum so your personal style can say it all.</p>
+            </div>
+            <div id="CUSTOMER CARE">
+                <p class="heading">CUSTOMER CARE</p>
+                <ul class="list">
+                    <li>Contact</li>
+                    <li>Help Center</li>
+                    <li>Make a Return or Exchange</li>
+                    <li>My Account</li>
+                    <li>Shipping & Delivery</li>
+                    <li>Return Policy</li>
+                    <li>Privacy Policy</li>
+                    <li>Term & Condition</li>
+                    <li>E-Gift Cards</li>
+                </ul>
+            </div>
+            <div id="about">
+                <p class="heading">ABOUT</p>
+                <ul class="list">
+                    <li>Sale</li>
+                    <li>Blog</li>
+                    <li>Our Store</li>
+                    <li>Responsibility</li>
+                    <li>Competitions</li>
+                </ul>
+            </div>
+            <div id="form">
+                <p class="heading">CONNECT WITH US</p>
+                <form action="#" >
+                   <div>
+                    <input required type="text" placeholder="Enter your name" class="input">
+                   </div>
+                   <div> 
+                     <input required type="text" placeholder="First name" class="info">
+                     <input required type="date" placeholder="Birthday" class="info">
+                   </div>
+                   <div style="height: fit-content;">
+                    <input required type="radio" name="gender" class="radio"><span>Male</span>
+                     <input required type="radio" name="gender" class="radio"><span>Female</span>
+                   </div>
+                   <div>
+                      <input required type="submit" id="submit" value="SUBSCRIBE">
+                   </div>
+                </form>
+            </div>
+        </footer>
+    <script src="index.js"></script>
+</bodul/ul</htul/ul

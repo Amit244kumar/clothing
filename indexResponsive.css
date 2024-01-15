@@ -1,0 +1,172 @@
+@media only screen and (max-width: 1500px){
+    #top-main-content #main-header-bar #left-side-navigation ul{
+        display: block;
+        position: relative;
+        top: 78px;;
+       
+    }
+    #top-main-content #main-header-bar #left-side-navigation ul li a{
+        color: black;
+    }
+    #top-main-content #main-header-bar #left-side-navigation ul li{
+        padding: 20px 0px 20px 85px;
+        border-bottom: 1px solid grey;
+    }
+    #top-main-content #main-header-bar #right-side-navigation ul{
+        display: none;
+    }
+    #top-main-content #main-header-bar #left-side-navigation {
+        width: 370px;
+        position: fixed;
+        left: -375px;
+        /* left: -48px; */
+        top: 0px;
+        transition: 0.2s;
+        height: 1442px;
+        background-color: white;
+    }
+    .container #parallel-lines div{
+        display: flex;
+    }
+    #header-heading{
+        width: fit-content;
+        margin: auto;
+        font-size: 11px;
+    }
+    #top-main-content #main-header-bar{
+        height: 59px;
+        gap: 3rem;
+        background-color: white;
+        position: relative;
+        top: -6px;
+    }
+    #top-main-content #main-header-bar h1{
+        width: 130px;
+    }
+    #top-main-content #main-header-bar #icons .list-item{
+        color: black;
+    }
+    #top-main-content #main-header-bar #icons{
+        right: 0px;
+    }
+    .container #addToCart .btn {
+        width: 238px;
+    }
+    .container #addToCart .btn #btn1{
+        left: 56px;
+        
+    }
+    .container #addToCart .btn #btn2{
+        left:33px;
+    }
+
+
+    .best-seller #slider-container #slider-wrap .products .sizes {
+        display: none;
+    }
+    #change-slider{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1050px){
+    .container #flex-box #header{
+        display: flex;
+        gap: 3px;
+    }
+    .container #flex-box #header h2{
+        position: relative;
+        top: -8px;
+    }
+    .container #flex-box{
+        top: 760px;
+        display: block;
+        width: 411px;
+        padding-left: 14px
+    }
+    .container #flex-box  #spiration{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1200px) and (min-width: 200px){
+    .container #addToCart {
+        width: 69%;
+    }
+} 
+
+
+@media only screen and (max-width: 400px) and (min-width: 100px){
+    .best-seller #slider-container #slider-wrap .products{
+        width: 242px;
+        height: 325px;
+    }    
+    .container #flex-box{
+       width:382px;
+    }
+    .container #flex-box #header{
+        font-size: 1.6em;
+    }
+}
+
+
+@media only screen and (max-width: 800px) and (min-width: 300px){
+    .best-seller #slider-container #slider-wrap .products{
+        width: 224px;
+        height: 294px;    
+    }
+    .best-seller #slider-container #slider-wrap .products .description{
+        top: 306px;
+    }
+    
+}
+
+@media only screen and (max-width: 350px) and (min-width: 100px){
+    .container #flex-box {
+        width: 300px;
+    }
+
+}
+
+@media only screen and (min-width: 325px) and (max-width: 1096px){
+    #imgContainer .clothsList {
+        width: 92%;
+        height: 450px;
+    }
+
+    #imgContainer .clothsList .imgContent{
+        top:-329px;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1400px){
+    #storeContainer #findStore {
+        top: 100px;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 1000px){
+    #storeContainer #findStore h1{
+        font-size: 36px;
+        margin-bottom: 13px;
+    }
+    #storeContainer #findStore {
+        top: 100px;
+    }
+    #storeContainer #findStore a button {
+        width: 124px;
+        height: 38px;
+        letter-spacing: 1px;
+        margin-left: 28px;
+        
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    #footer{
+        flex-wrap: wrap;
+    }
+    #footer #form{
+        width: 100%;
+    } 
+    #footer{
+        margin: 0px 22px;
+    }
+}
